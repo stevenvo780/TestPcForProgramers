@@ -85,3 +85,7 @@ vmlinux
 
 # Historials de bench (si prefieres no trackearlos, comenta esta línea)
 kernel-build-history.json
+cpu-matmul-history.json
+memory-bandwidth-history.json
+disk-io-history.json
+.suite_last.jsonl
