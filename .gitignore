@@ -1,0 +1,87 @@
+# Sistema/OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.env
+.env.*
+.python-version
+pip-wheel-metadata/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Logs y temporales
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+.cache/
+.tmp/
+logs/
+tmp/
+
+# Cobertura y pruebas
+.coverage
+coverage/
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+.junit/
+
+# Builds/artefactos
+build/
+dist/
+site/
+.eggs/
+
+# Editores/IDE
+.vscode/
+.vscode-test/
+.idea/
+
+# Node (por si acaso)
+node_modules/
+
+# Videos/pesados locales (mantén explícitos si quieres versionarlos)
+*.mp4
+*.mkv
+*.avi
+*.mov
+
+# Artefactos de agentes/automatización
+artifacts/
+playwright-report/
+playwright/.cache/
+trace.zip
+storageState.json
+*.har
+*.tmp
+*.log
+
+# Bench del kernel (generados)
+build/
+work/
+cache/
+ccache/
+*.o
+*.ko
+*.mod
+*.mod.c
+modules.order
+Module.symvers
+vmlinux
+
+# Historials de bench (si prefieres no trackearlos, comenta esta línea)
+kernel-build-history.json
