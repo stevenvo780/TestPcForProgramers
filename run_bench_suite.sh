@@ -53,11 +53,11 @@ run_and_capture() {
 
 parse_field() {
   local json="$1" key="$2"
-  python3 - "$key" <<'PY'
+  python3 - "$key" "$json" <<'PY'
 import json,sys
 k=sys.argv[1]
 try:
-    obj=json.load(sys.stdin)
+    obj=json.loads(sys.argv[2])
     # Admitimos llaves anidadas simples tipo results.gbps_avg
     cur=obj
     for part in k.split('.'):
@@ -125,4 +125,4 @@ fi
 echo "\n=== Resumen de la suite ==="
 for s in "${summaries[@]}"; do
   echo "- $s"
-fi
+done
